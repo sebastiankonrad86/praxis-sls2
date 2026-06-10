@@ -101,10 +101,26 @@ nav a:hover::after { transform: scaleX(1); transform-origin: left; }
 .portrait-wrap { position: relative; width: 88%; }
 .portrait-wrap::before { content: ""; position: absolute; z-index: -1; inset: -18px 18px 18px -18px; background: var(--cream); }
 .portrait-wrap img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 60% center; }
-.timeline { margin: 44px 0 0; padding: 0; list-style: none; }
-.timeline li { display: grid; grid-template-columns: 112px 1fr; gap: 20px; padding: 19px 0; border-top: 1px solid var(--line); }
-.timeline li:last-child { border-bottom: 1px solid var(--line); }
-.timeline span { color: var(--sage); font-size: .84rem; font-weight: 600; }
+.career {
+  display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(55px, 9vw, 130px);
+  margin-top: 90px; padding-top: 46px; border-top: 1px solid var(--line);
+}
+.career-head .section-label { margin-bottom: 12px; }
+.career-head h3 { max-width: 280px; margin: 0; font-size: clamp(1.75rem, 3vw, 2.45rem); letter-spacing: -.035em; }
+.timeline { position: relative; margin: 0; padding: 0 0 0 42px; list-style: none; }
+.timeline li { position: relative; padding: 0 0 34px; }
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::before {
+  content: ""; position: absolute; top: 6px; left: -42px; width: 12px; height: 12px;
+  border: 2px solid var(--deep); border-radius: 50%; background: var(--paper);
+}
+.timeline li::after {
+  content: ""; position: absolute; top: 19px; bottom: -6px; left: -36px; width: 1px;
+  background: rgba(127, 145, 136, .5);
+}
+.timeline li:last-child::after { display: none; }
+.timeline span { display: block; margin-bottom: 4px; color: var(--deep); font-size: .88rem; font-weight: 600; }
+.timeline p { max-width: 620px; margin: 0; color: var(--muted); font-size: 1rem; }
 
 .therapy { background: var(--cream); }
 .section-head { max-width: 720px; margin-bottom: 65px; }
@@ -165,6 +181,7 @@ details p { margin: 12px 0 0; }
   .nav-contact { border: 0; border-radius: 0; }
   .contact-grid { grid-template-columns: 1fr; gap: 65px; }
   .about-grid { grid-template-columns: .72fr 1.28fr; gap: 50px; }
+  .career { grid-template-columns: .72fr 1.28fr; gap: 50px; }
   .portrait-wrap { width: 82%; max-width: 500px; }
   .card-grid, .info-grid { grid-template-columns: 1fr; }
   .card { min-height: auto; padding: 36px 0; }
@@ -184,8 +201,8 @@ details p { margin: 12px 0 0; }
   .section { padding: 78px 0; }
   h2 { font-size: 2.7rem; }
   .about-grid { grid-template-columns: 1fr; gap: 55px; }
+  .career { grid-template-columns: 1fr; gap: 38px; margin-top: 68px; padding-top: 38px; }
   .portrait-wrap { width: 82%; }
-  .timeline li { grid-template-columns: 1fr; gap: 4px; }
   .feature, .info-item { padding: 30px 24px; }
   .contact-details > div { grid-template-columns: 1fr; gap: 7px; }
 }
