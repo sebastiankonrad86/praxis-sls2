@@ -128,7 +128,6 @@ h3 { margin-bottom: 16px; font-size: 1.45rem; }
 .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .card { min-height: 440px; padding: 40px 32px 40px 0; }
 .card + .card { padding-left: 32px; border-left: 1px solid var(--line); }
-.card-number { display: block; margin-bottom: 80px; color: var(--sage); font-size: .78rem; letter-spacing: .12em; }
 .card p { margin: 0; color: var(--muted); }
 .card .text-link { display: inline-block; margin-top: 30px; color: var(--deep); font-size: .88rem; font-weight: 600; text-decoration: none; }
 .feature {
@@ -253,7 +252,6 @@ details p { margin: 12px 0 0; }
   .card-grid, .info-grid, .focus-grid, .process-grid { grid-template-columns: 1fr; }
   .card { min-height: auto; padding: 36px 0; }
   .card + .card { padding-left: 0; border-top: 1px solid var(--line); border-left: 0; }
-  .card-number { margin-bottom: 30px; }
   .feature { grid-template-columns: 1fr; gap: 25px; }
   .focus-card { min-height: 310px; }
   .focus-card > span { margin-bottom: 42px; }
