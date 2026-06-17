@@ -196,6 +196,15 @@ details p { margin: 12px 0 0; }
   max-width: 900px; margin-bottom: 28px;
   font-size: clamp(3rem, 7vw, 6.5rem); letter-spacing: -.06em;
 }
+.methods-hero-title {
+  display: grid; gap: .06em; max-width: 760px;
+  font-size: clamp(2.5rem, 5.2vw, 4.9rem); line-height: .94;
+}
+.methods-hero-title span { display: block; }
+.methods-hero-title span:nth-child(2) {
+  padding-left: clamp(26px, 6vw, 92px); color: var(--sage);
+}
+.methods-hero-title span:nth-child(3) { padding-left: clamp(6px, 1.4vw, 22px); }
 .page-hero .lead { max-width: 760px; font-size: clamp(1.1rem, 2vw, 1.35rem); }
 .page-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 38px; }
 .button-outline { border-color: var(--deep); color: var(--deep); }
