@@ -150,7 +150,7 @@ h3 { margin-bottom: 16px; font-size: 1.45rem; }
 .focus-card > span { margin-bottom: 70px; color: var(--sage); font-size: .78rem; letter-spacing: .12em; }
 .focus-card h3 { font-size: 1.65rem; }
 .focus-card p { color: var(--muted); }
-.focus-card strong { margin-top: auto; color: var(--deep); font-size: .88rem; font-weight: 600; }
+.focus-card strong { margin-top: 18px; color: var(--deep); font-size: .88rem; font-weight: 600; }
 
 .process { background: var(--cream); }
 .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
