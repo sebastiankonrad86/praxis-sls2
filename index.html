@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Psychotherapeutische Praxis Sebastian Konrad-Schönberger in Saarlouis. Verhaltenstherapie für Erwachsene und ADHS-Diagnostik.">
   <title>Psychotherapeutische Praxis Sebastian Konrad-Schönberger</title>
-  <link rel="stylesheet" href="style.css?v=9">
-  <script src="script.js?v=5" defer></script>
+  <link rel="stylesheet" href="style.css?v=10">
+  <script src="script.js?v=6" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -22,12 +22,19 @@
         <span class="sr-only">Menü öffnen</span>
       </button>
       <nav id="main-nav" aria-label="Hauptnavigation">
-        <a href="index.html">Praxis</a>
+        <a href="index.html" aria-current="page">Praxis</a>
         <a href="methoden.html?v=56c4865">Methoden</a>
-        <a href="adhs.html">ADHS</a>
-        <a href="depressionen.html">Depressionen</a>
-        <a href="burnout.html">Burnout</a>
-        <a href="trauma.html">Trauma</a>
+        <details class="nav-disorders">
+          <summary>Störungsbilder</summary>
+          <div class="nav-disorders-menu">
+            <a href="angststoerungen.html">Angststörungen</a>
+            <a href="adhs.html">ADHS</a>
+            <a href="depressionen.html">Depressionen</a>
+            <a href="burnout.html">Burnout</a>
+            <a href="trauma.html">Trauma</a>
+          </div>
+        </details>
+        <a href="informationen.html">Informationen</a>
         <a class="nav-contact" href="#kontakt">Therapieanfrage</a>
       </nav>
     </div>
@@ -120,12 +127,17 @@
         <div class="section-head reveal">
           <p class="section-label">Schwerpunkte</p>
           <h2 id="focus-title">Themen im Fokus</h2>
-          <p>Vier häufige Belastungsbereiche, zu denen Sie auf den Unterseiten mehr über Einordnung und therapeutisches Vorgehen erfahren.</p>
+          <p>Fünf häufige Belastungsbereiche, zu denen Sie auf den Unterseiten mehr über Einordnung und therapeutisches Vorgehen erfahren.</p>
         </div>
         <div class="focus-grid">
           <a class="focus-card reveal" href="adhs.html">
             <h3>ADHS bei Erwachsenen</h3>
             <p>Aufmerksamkeit, Selbststeuerung und ein verständlicher Blick auf die eigene Funktionsweise.</p>
+            <strong>Mehr erfahren →</strong>
+          </a>
+          <a class="focus-card reveal" href="angststoerungen.html">
+            <h3>Angststörungen</h3>
+            <p>Vermeidung überwinden und wieder mehr Sicherheit und Handlungsspielraum entwickeln.</p>
             <strong>Mehr erfahren →</strong>
           </a>
           <a class="focus-card reveal" href="depressionen.html">
@@ -165,25 +177,6 @@
           <article class="process-step reveal">
             <h3>Behandlung</h3>
             <p>Bis zum Beginn einer Behandlung kann es zu Wartezeiten kommen. Im Erstgespräch besprechen wir deshalb auch, was Sie in dieser Zeit bereits tun können und welche Unterstützung sinnvoll ist.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section info" id="infos">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="section-label">Gut zu wissen</p>
-          <h2>Informationen</h2>
-        </div>
-        <div class="info-grid">
-          <article class="info-item reveal">
-            <h3>Kostenübernahme</h3>
-            <p>Ich behandle in meiner Praxis gesetzlich Versicherte, Privatpatienten und Selbstzahler.</p>
-          </article>
-          <article class="info-item reveal">
-            <h3>Barrierefreiheit</h3>
-            <p>Die Räume befinden sich im Erdgeschoss, sind jedoch nur über einige Treppenstufen erreichbar und daher leider nicht barrierefrei.</p>
           </article>
         </div>
       </div>
@@ -230,10 +223,12 @@
       </details>
       <nav class="footer-links" aria-label="Themenseiten">
         <a href="methoden.html?v=56c4865">Methoden</a>
+        <a href="angststoerungen.html">Angststörungen</a>
         <a href="adhs.html">ADHS</a>
         <a href="depressionen.html">Depressionen</a>
         <a href="burnout.html">Burnout</a>
         <a href="trauma.html">Trauma</a>
+        <a href="informationen.html">Informationen</a>
       </nav>
       <p class="copyright">© Sebastian Konrad-Schönberger <span id="year">2026</span></p>
     </div>
