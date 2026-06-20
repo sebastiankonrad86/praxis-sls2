@@ -140,7 +140,7 @@ h3 { margin-bottom: 16px; font-size: 1.45rem; }
 .feature > p { color: rgba(255,255,255,.72); }
 
 .focus { background: var(--paper); }
-.focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.focus-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .focus-card {
   display: flex; flex-direction: column; min-height: 390px; padding: 36px;
   border: 1px solid var(--line); background: white; text-decoration: none;
@@ -245,6 +245,28 @@ details p { margin: 12px 0 0; }
 
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
+
+@media (min-width: 901px) and (max-width: 1080px) {
+  .site-header, .site-header.scrolled, .subpage .site-header { backdrop-filter: none; }
+  .menu-toggle { display: grid; gap: 5px; padding: 10px; color: inherit; background: none; border: 0; }
+  .menu-toggle > span:not(.sr-only) { display: block; width: 24px; height: 1px; background: currentColor; transition: transform .25s, opacity .25s; }
+  .menu-toggle[aria-expanded="true"] > span:first-child { transform: translateY(6px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] > span:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] > span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  #main-nav {
+    position: fixed; inset: 84px 0 auto; display: flex; flex-direction: column; align-items: flex-start;
+    width: 100%; height: calc(100svh - 84px);
+    gap: 0; padding: 34px 24px 24px; color: var(--ink); background: var(--cream);
+    opacity: 0; visibility: hidden; transform: translateY(-10px); transition: .25s;
+  }
+  #main-nav.open { opacity: 1; visibility: visible; transform: none; }
+  #main-nav a { width: 100%; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: clamp(1.75rem, 7vw, 2.35rem); }
+  #main-nav a:not(.nav-contact)::after { display: none; }
+  .nav-contact {
+    margin-top: auto; padding: 15px 20px; color: white; background: var(--deep);
+    border: 0; border-radius: 100px; text-align: center; font-size: 1rem;
+  }
+}
 
 @media (max-width: 900px) {
   .section { padding: 95px 0; }
