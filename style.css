@@ -215,6 +215,11 @@ details p { margin: 12px 0 0; }
 }
 .subpage #main-nav a[aria-current="page"]::after { transform: scaleX(1); }
 .page-hero { padding: 115px 0 95px; background: var(--cream); }
+.info-page-hero {
+  background:
+    linear-gradient(rgba(251, 250, 247, .76), rgba(251, 250, 247, .82)),
+    url("assets/praxisraum.jpg") center 54% / cover no-repeat;
+}
 .page-hero-inner { max-width: 900px; }
 .page-hero h1 {
   max-width: 900px; margin-bottom: 28px;
