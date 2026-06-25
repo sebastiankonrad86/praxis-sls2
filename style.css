@@ -374,6 +374,13 @@ details p { margin: 12px 0 0; }
   .contact-details > div { grid-template-columns: 1fr; gap: 7px; }
 }
 
+@media (max-width: 420px) {
+  .hero h1 {
+    letter-spacing: .11em;
+    text-indent: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
